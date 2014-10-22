@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "SaveBookmarks",
+  "description": "Save Bookmarks",
+  "version": "1.0",
+  
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  
+  "background": {
+    "persistent": false,
+    "scripts": ["SaveBookmarks.js"]
+  },
+  
+  "permissions": ["tabs", "background", "bookmarks" ],
+   
+  "browser_action": {
+    "default_title": "Save Bookmarks",
+    "default_icon": "hello.png"
+  }		
+}
